@@ -1,0 +1,1324 @@
+{
+  "metadata": {
+    "title": "Historical & Modern Xiangqi Grandmaster Rankings & Rating Database",
+    "datasetReference": "Dataset/對局/大師對局",
+    "methodology": "Official Chinese Xiangqi Association (CXA) grandmaster rating scale (中国象棋棋手等级分), National Individual Championships (全国个人赛冠军/棋王), and retrospective Elo estimation for historical masters.",
+    "version": "1.0",
+    "totalRankedPlayers": 66
+  },
+  "rankings": [
+    {
+      "rank": 1,
+      "name": "王天一",
+      "pinyin": "Wang Tianyi",
+      "englishName": "Wang Tianyi",
+      "aliases": [
+        "外星人",
+        "魔童"
+      ],
+      "traditionalName": "王天一",
+      "historicalTitle": "全国个人赛三冠王 / 连续10年等级分第一人",
+      "historicalTier": "Tier 1: All-Time Super Grandmaster (时代顶峰/超特大)",
+      "estimatedRetroElo": 2770,
+      "ratingRange": {
+        "min": 2730,
+        "max": 2780
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "郑惟桐",
+      "pinyin": "Zheng Weitong",
+      "englishName": "Zheng Weitong",
+      "aliases": [
+        "蜀山少侠"
+      ],
+      "traditionalName": "鄭惟桐",
+      "historicalTitle": "全国个人赛两冠王 / 世界冠军",
+      "historicalTier": "Tier 1: All-Time Super Grandmaster (时代顶峰/超特大)",
+      "estimatedRetroElo": 2750,
+      "ratingRange": {
+        "min": 2710,
+        "max": 2760
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "蒋川",
+      "pinyin": "Jiang Chuan",
+      "englishName": "Jiang Chuan",
+      "aliases": [
+        "玉面神佛"
+      ],
+      "traditionalName": "蔣川",
+      "historicalTitle": "全国个人赛冠军 / 首位等级分破2700棋手",
+      "historicalTier": "Tier 1: All-Time Super Grandmaster (时代顶峰/超特大)",
+      "estimatedRetroElo": 2700,
+      "ratingRange": {
+        "min": 2660,
+        "max": 2710
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "许银川",
+      "pinyin": "Xu Yinchuan",
+      "englishName": "Xu Yinchuan",
+      "aliases": [
+        "少年姜太公",
+        "许仙"
+      ],
+      "traditionalName": "許銀川",
+      "historicalTitle": "全国个人赛六冠王 / 六届全国冠军",
+      "historicalTier": "Tier 1: All-Time Supreme Chess King (旷世棋王/六冠王)",
+      "estimatedRetroElo": 2680,
+      "ratingRange": {
+        "min": 2650,
+        "max": 2700
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 5,
+      "name": "胡荣华",
+      "pinyin": "Hu Ronghua",
+      "englishName": "Hu Ronghua",
+      "aliases": [
+        "棋坛司令",
+        "十连霸",
+        "十四冠王"
+      ],
+      "traditionalName": "胡榮華",
+      "historicalTitle": "全国个人赛十四冠王 / 十连霸旷古绝伦",
+      "historicalTier": "Tier 1: All-Time Supreme Chess King (一代宗师/十四冠王)",
+      "estimatedRetroElo": 2680,
+      "ratingRange": {
+        "min": 2640,
+        "max": 2700
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 6,
+      "name": "吕钦",
+      "pinyin": "Lv Qin",
+      "englishName": "Lv Qin",
+      "aliases": [
+        "快马飞刀",
+        "羊城少帅"
+      ],
+      "traditionalName": "呂欽",
+      "historicalTitle": "全国个人赛五冠王 / 五届全国冠军",
+      "historicalTier": "Tier 1: All-Time Supreme Chess King (时代棋王/五冠王)",
+      "estimatedRetroElo": 2660,
+      "ratingRange": {
+        "min": 2630,
+        "max": 2680
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 7,
+      "name": "赵鑫鑫",
+      "pinyin": "Zhao Xinxin",
+      "englishName": "Zhao Xinxin",
+      "aliases": [
+        "六脉神剑"
+      ],
+      "traditionalName": "趙鑫鑫",
+      "historicalTitle": "全国个人赛冠军 / 世界冠军",
+      "historicalTier": "Tier 1: All-Time Super Grandmaster (时代顶峰/超特大)",
+      "estimatedRetroElo": 2640,
+      "ratingRange": {
+        "min": 2610,
+        "max": 2660
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 8,
+      "name": "洪智",
+      "pinyin": "Hong Zhi",
+      "englishName": "Hong Zhi",
+      "aliases": [
+        "乱战天王",
+        "洪天王"
+      ],
+      "traditionalName": "洪智",
+      "historicalTitle": "全国个人赛冠军 / 威凯杯冠军",
+      "historicalTier": "Tier 1: All-Time Super Grandmaster (时代顶峰/超特大)",
+      "estimatedRetroElo": 2630,
+      "ratingRange": {
+        "min": 2600,
+        "max": 2650
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 9,
+      "name": "汪洋",
+      "pinyin": "Wang Yang",
+      "englishName": "Wang Yang",
+      "aliases": [
+        "白面书生"
+      ],
+      "traditionalName": "汪洋",
+      "historicalTitle": "全国个人赛冠军",
+      "historicalTier": "Tier 1: All-Time Super Grandmaster (时代顶峰/超特大)",
+      "estimatedRetroElo": 2630,
+      "ratingRange": {
+        "min": 2600,
+        "max": 2650
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 10,
+      "name": "赵国荣",
+      "pinyin": "Zhao Guorong",
+      "englishName": "Zhao Guorong",
+      "aliases": [
+        "新东北虎"
+      ],
+      "traditionalName": "趙國榮",
+      "historicalTitle": "全国个人赛四冠王",
+      "historicalTier": "Tier 1: All-Time Supreme Chess King (时代棋王/四冠王)",
+      "estimatedRetroElo": 2620,
+      "ratingRange": {
+        "min": 2590,
+        "max": 2640
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 11,
+      "name": "李来群",
+      "pinyin": "Li Laiqun",
+      "englishName": "Li Laiqun",
+      "aliases": [
+        "智多星"
+      ],
+      "traditionalName": "李來群",
+      "historicalTitle": "全国个人赛四冠王 / 首位北方棋王",
+      "historicalTier": "Tier 1: All-Time Supreme Chess King (时代棋王/四冠王)",
+      "estimatedRetroElo": 2620,
+      "ratingRange": {
+        "min": 2590,
+        "max": 2640
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 12,
+      "name": "杨官璘",
+      "pinyin": "Yang Guanlin",
+      "englishName": "Yang Guanlin",
+      "aliases": [
+        "魔叔",
+        "残局圣手"
+      ],
+      "traditionalName": "楊官璘",
+      "historicalTitle": "全国个人赛首届冠军 / 四冠王",
+      "historicalTier": "Tier 1: All-Time Supreme Chess King (一代宗师/四冠王)",
+      "estimatedRetroElo": 2620,
+      "ratingRange": {
+        "min": 2590,
+        "max": 2650
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 13,
+      "name": "柳大华",
+      "pinyin": "Liu Dahua",
+      "englishName": "Liu Dahua",
+      "aliases": [
+        "东方电脑",
+        "盲棋之王"
+      ],
+      "traditionalName": "柳大華",
+      "historicalTitle": "全国个人赛两冠王",
+      "historicalTier": "Tier 1: All-Time Supreme Chess King (时代棋王/两冠王)",
+      "estimatedRetroElo": 2610,
+      "ratingRange": {
+        "min": 2580,
+        "max": 2630
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 14,
+      "name": "孙勇征",
+      "pinyin": "Sun Yongzheng",
+      "englishName": "Sun Yongzheng",
+      "aliases": [
+        "棋天大圣"
+      ],
+      "traditionalName": "孫勇徵",
+      "historicalTitle": "全国个人赛冠军",
+      "historicalTier": "Tier 1: All-Time Super Grandmaster (时代顶峰/超特大)",
+      "estimatedRetroElo": 2600,
+      "ratingRange": {
+        "min": 2570,
+        "max": 2620
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 15,
+      "name": "谢靖",
+      "pinyin": "Xie Jing",
+      "englishName": "Xie Jing",
+      "aliases": [
+        "小司令"
+      ],
+      "traditionalName": "謝靖",
+      "historicalTitle": "全国个人赛冠军",
+      "historicalTier": "Tier 1: All-Time Super Grandmaster (时代顶峰/超特大)",
+      "estimatedRetroElo": 2590,
+      "ratingRange": {
+        "min": 2560,
+        "max": 2610
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 16,
+      "name": "徐天红",
+      "pinyin": "Xu Tianhong",
+      "englishName": "Xu Tianhong",
+      "aliases": [
+        "笑面佛"
+      ],
+      "traditionalName": "徐天紅",
+      "historicalTitle": "全国个人赛冠军 / 世界冠军",
+      "historicalTier": "Tier 1: All-Time Super Grandmaster (时代顶峰/超特大)",
+      "estimatedRetroElo": 2590,
+      "ratingRange": {
+        "min": 2560,
+        "max": 2610
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 17,
+      "name": "陶汉明",
+      "pinyin": "Tao Hanming",
+      "englishName": "Tao Hanming",
+      "aliases": [
+        "长白虎",
+        "民间棋王"
+      ],
+      "traditionalName": "陶漢明",
+      "historicalTitle": "全国个人赛冠军",
+      "historicalTier": "Tier 1: All-Time Super Grandmaster (时代顶峰/超特大)",
+      "estimatedRetroElo": 2590,
+      "ratingRange": {
+        "min": 2560,
+        "max": 2610
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 18,
+      "name": "于幼华",
+      "pinyin": "Yu Youhua",
+      "englishName": "Yu Youhua",
+      "aliases": [
+        "拼命三郎"
+      ],
+      "traditionalName": "於幼華",
+      "historicalTitle": "全国个人赛冠军",
+      "historicalTier": "Tier 1: All-Time Super Grandmaster (时代顶峰/超特大)",
+      "estimatedRetroElo": 2580,
+      "ratingRange": {
+        "min": 2550,
+        "max": 2600
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 19,
+      "name": "徐超",
+      "pinyin": "Xu Chao",
+      "englishName": "Xu Chao",
+      "aliases": [],
+      "traditionalName": "徐超",
+      "historicalTitle": "全国个人赛冠军 / 世界冠军",
+      "historicalTier": "Tier 1: All-Time Super Grandmaster (时代顶峰/超特大)",
+      "estimatedRetroElo": 2580,
+      "ratingRange": {
+        "min": 2550,
+        "max": 2600
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 20,
+      "name": "王嘉良",
+      "pinyin": "Wang Jialiang",
+      "englishName": "Wang Jialiang",
+      "aliases": [
+        "东北虎开山鼻祖"
+      ],
+      "traditionalName": "王嘉良",
+      "historicalTitle": "全国三届亚军 / 东北棋坛宗师",
+      "historicalTier": "Tier 1: All-Time Legend Master (一代宗师/泰斗)",
+      "estimatedRetroElo": 2580,
+      "ratingRange": {
+        "min": 2540,
+        "max": 2600
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 21,
+      "name": "李义庭",
+      "pinyin": "Li Yiting",
+      "englishName": "Li Yiting",
+      "aliases": [
+        "小神童"
+      ],
+      "traditionalName": "李義庭",
+      "historicalTitle": "全国个人赛冠军",
+      "historicalTier": "Tier 1: All-Time Supreme Chess King (时代棋王)",
+      "estimatedRetroElo": 2580,
+      "ratingRange": {
+        "min": 2540,
+        "max": 2600
+      },
+      "titles": [
+        "特级大师",
+        "全国冠军"
+      ]
+    },
+    {
+      "rank": 22,
+      "name": "孟辰",
+      "pinyin": "Meng Chen",
+      "englishName": "Meng Chen",
+      "aliases": [
+        "大魔王"
+      ],
+      "traditionalName": "孟辰",
+      "historicalTitle": "世界冠军 / 全国个人赛亚军",
+      "historicalTier": "Tier 1: Super Grandmaster (超特大)",
+      "estimatedRetroElo": 2580,
+      "ratingRange": {
+        "min": 2550,
+        "max": 2600
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 23,
+      "name": "申鹏",
+      "pinyin": "Shen Peng",
+      "englishName": "Shen Peng",
+      "aliases": [
+        "大将军"
+      ],
+      "traditionalName": "申鵬",
+      "historicalTitle": "世界冠军 / 全国亚军",
+      "historicalTier": "Tier 2: Elite Grandmaster (一流特大)",
+      "estimatedRetroElo": 2570,
+      "ratingRange": {
+        "min": 2540,
+        "max": 2590
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 24,
+      "name": "郝继超",
+      "pinyin": "Hao Jichao",
+      "englishName": "Hao Jichao",
+      "aliases": [],
+      "traditionalName": "郝繼超",
+      "historicalTitle": "全国个人赛季军 / 亚洲冠军",
+      "historicalTier": "Tier 2: Elite Grandmaster (一流特大)",
+      "estimatedRetroElo": 2560,
+      "ratingRange": {
+        "min": 2530,
+        "max": 2580
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 25,
+      "name": "陆伟韬",
+      "pinyin": "Lu Weitao",
+      "englishName": "Lu Weitao",
+      "aliases": [],
+      "traditionalName": "陸偉韜",
+      "historicalTitle": "世界冠军 / 全国个人赛亚军",
+      "historicalTier": "Tier 2: Elite Grandmaster (一流特大)",
+      "estimatedRetroElo": 2550,
+      "ratingRange": {
+        "min": 2520,
+        "max": 2570
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 26,
+      "name": "黄竹风",
+      "pinyin": "Huang Zhufeng",
+      "englishName": "Huang Zhufeng",
+      "aliases": [],
+      "traditionalName": "黃竹風",
+      "historicalTitle": "全国个人赛亚军",
+      "historicalTier": "Tier 2: Elite Grandmaster (一流特大)",
+      "estimatedRetroElo": 2550,
+      "ratingRange": {
+        "min": 2520,
+        "max": 2570
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 27,
+      "name": "曹岩磊",
+      "pinyin": "Cao Yanlei",
+      "englishName": "Cao Yanlei",
+      "aliases": [
+        "弃子大师"
+      ],
+      "traditionalName": "曹岩磊",
+      "historicalTitle": "全国个人赛季军 / 青年冠军",
+      "historicalTier": "Tier 2: Elite Grandmaster (一流特大/大师)",
+      "estimatedRetroElo": 2550,
+      "ratingRange": {
+        "min": 2520,
+        "max": 2570
+      },
+      "titles": [
+        "国家大师"
+      ]
+    },
+    {
+      "rank": 28,
+      "name": "唐丹",
+      "pinyin": "Tang Dan",
+      "englishName": "Tang Dan",
+      "aliases": [
+        "超级丹",
+        "九冠王"
+      ],
+      "traditionalName": "唐丹",
+      "historicalTitle": "全国女子九冠王 / 世界冠军",
+      "historicalTier": "Tier 2: Supreme Women Champion (女子第一人/九冠王)",
+      "estimatedRetroElo": 2550,
+      "ratingRange": {
+        "min": 2520,
+        "max": 2570
+      },
+      "titles": [
+        "特级大师",
+        "全国女子冠军"
+      ]
+    },
+    {
+      "rank": 29,
+      "name": "苗永鹏",
+      "pinyin": "Miao Yongpeng",
+      "englishName": "Miao Yongpeng",
+      "aliases": [
+        "苗大侠"
+      ],
+      "traditionalName": "苗永鵬",
+      "historicalTitle": "全国个人赛季军 / 亚洲冠军",
+      "historicalTier": "Tier 2: Elite Grandmaster (一流特大)",
+      "estimatedRetroElo": 2540,
+      "ratingRange": {
+        "min": 2510,
+        "max": 2560
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 30,
+      "name": "卜凤波",
+      "pinyin": "Bu Fengbo",
+      "englishName": "Bu Fengbo",
+      "aliases": [
+        "辽东神煞"
+      ],
+      "traditionalName": "卜鳳波",
+      "historicalTitle": "全国个人赛季军",
+      "historicalTier": "Tier 2: Elite Grandmaster (一流特大)",
+      "estimatedRetroElo": 2540,
+      "ratingRange": {
+        "min": 2510,
+        "max": 2560
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 31,
+      "name": "吴贵临",
+      "pinyin": "Wu Guilin",
+      "englishName": "Wu Guilin",
+      "aliases": [
+        "台湾棋王"
+      ],
+      "traditionalName": "吳貴臨",
+      "historicalTitle": "台湾棋王 / 世界亚军 / 亚洲特大",
+      "historicalTier": "Tier 2: Regional Chess King (时代名家/台湾棋王)",
+      "estimatedRetroElo": 2540,
+      "ratingRange": {
+        "min": 2500,
+        "max": 2560
+      },
+      "titles": [
+        "特级大师",
+        "国际特级大师"
+      ]
+    },
+    {
+      "rank": 32,
+      "name": "赵汝权",
+      "pinyin": "Zhao Ruquan",
+      "englishName": "Zhao Ruquan",
+      "aliases": [
+        "香港棋王"
+      ],
+      "traditionalName": "趙汝權",
+      "historicalTitle": "香港棋王 / 世界亚军 / 国际特大",
+      "historicalTier": "Tier 2: Regional Chess King (时代名家/香港棋王)",
+      "estimatedRetroElo": 2530,
+      "ratingRange": {
+        "min": 2500,
+        "max": 2550
+      },
+      "titles": [
+        "特级大师",
+        "国际特级大师"
+      ]
+    },
+    {
+      "rank": 33,
+      "name": "刘殿中",
+      "pinyin": "Liu Dianzhong",
+      "englishName": "Liu Dianzhong",
+      "aliases": [
+        "燕赵雄鹰"
+      ],
+      "traditionalName": "劉殿中",
+      "historicalTitle": "全国个人赛季军",
+      "historicalTier": "Tier 2: Elite Grandmaster (一代名家/特大)",
+      "estimatedRetroElo": 2530,
+      "ratingRange": {
+        "min": 2500,
+        "max": 2550
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 34,
+      "name": "王斌",
+      "pinyin": "Wang Bin",
+      "englishName": "Wang Bin",
+      "aliases": [
+        "江南才子"
+      ],
+      "traditionalName": "王斌",
+      "historicalTitle": "全国个人赛亚军 / 世界冠军",
+      "historicalTier": "Tier 2: Elite Grandmaster (一流特大)",
+      "estimatedRetroElo": 2530,
+      "ratingRange": {
+        "min": 2500,
+        "max": 2550
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 35,
+      "name": "程鸣",
+      "pinyin": "Cheng Ming",
+      "englishName": "Cheng Ming",
+      "aliases": [],
+      "traditionalName": "程鳴",
+      "historicalTitle": "全国个人赛前六 / 象甲主力",
+      "historicalTier": "Tier 2: Elite Grandmaster (一流特大)",
+      "estimatedRetroElo": 2530,
+      "ratingRange": {
+        "min": 2500,
+        "max": 2550
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 36,
+      "name": "周德裕",
+      "pinyin": "Zhou Deyu",
+      "englishName": "Zhou Deyu",
+      "aliases": [
+        "七省棋王",
+        "扬州三剑客",
+        "小魔王"
+      ],
+      "traditionalName": "周德裕",
+      "historicalTitle": "七省棋王 / 民国棋坛霸主",
+      "historicalTier": "Tier 1: Supreme Chess King (时代顶峰棋王)",
+      "estimatedRetroElo": 2520,
+      "ratingRange": {
+        "min": 2480,
+        "max": 2550
+      },
+      "titles": [
+        "七省棋王"
+      ]
+    },
+    {
+      "rank": 37,
+      "name": "万春林",
+      "pinyin": "Wan Chunlin",
+      "englishName": "Wan Chunlin",
+      "aliases": [],
+      "traditionalName": "萬春林",
+      "historicalTitle": "全国个人赛季军",
+      "historicalTier": "Tier 2: Elite Grandmaster (一流特大)",
+      "estimatedRetroElo": 2520,
+      "ratingRange": {
+        "min": 2490,
+        "max": 2540
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 38,
+      "name": "张强",
+      "pinyin": "Zhang Qiang",
+      "englishName": "Zhang Qiang",
+      "aliases": [
+        "京华主帅"
+      ],
+      "traditionalName": "張強",
+      "historicalTitle": "全国大师赛冠军 / 著名讲棋名宿",
+      "historicalTier": "Tier 2: Elite Grandmaster (著名国手/特大)",
+      "estimatedRetroElo": 2520,
+      "ratingRange": {
+        "min": 2490,
+        "max": 2540
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 39,
+      "name": "阎文清",
+      "pinyin": "Yan Wenqing",
+      "englishName": "Yan Wenqing",
+      "aliases": [
+        "布局专家"
+      ],
+      "traditionalName": "閻文清",
+      "historicalTitle": "全国个人赛亚军",
+      "historicalTier": "Tier 2: Elite Grandmaster (一流特大)",
+      "estimatedRetroElo": 2520,
+      "ratingRange": {
+        "min": 2490,
+        "max": 2540
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 40,
+      "name": "李少庚",
+      "pinyin": "Li Shaogeng",
+      "englishName": "Li Shaogeng",
+      "aliases": [],
+      "traditionalName": "李少庚",
+      "historicalTitle": "全国个人赛季军",
+      "historicalTier": "Tier 2: Elite Grandmaster (一流国手/大师)",
+      "estimatedRetroElo": 2520,
+      "ratingRange": {
+        "min": 2490,
+        "max": 2540
+      },
+      "titles": [
+        "国家大师"
+      ]
+    },
+    {
+      "rank": 41,
+      "name": "谢巋",
+      "pinyin": "Xie Kui",
+      "englishName": "Xie Kui",
+      "aliases": [],
+      "traditionalName": "謝巋",
+      "historicalTitle": "全国个人赛前列",
+      "historicalTier": "Tier 2: Elite Grandmaster (特大/大师)",
+      "estimatedRetroElo": 2510,
+      "ratingRange": {
+        "min": 2480,
+        "max": 2530
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 42,
+      "name": "董文渊",
+      "pinyin": "Dong Wenyuan",
+      "englishName": "Dong Wenyuan",
+      "aliases": [
+        "新七省棋王",
+        "小杭州",
+        "双枪将"
+      ],
+      "traditionalName": "董文淵",
+      "historicalTitle": "新七省棋王 / 四省棋王",
+      "historicalTier": "Tier 1: Supreme Chess King (时代顶峰棋王)",
+      "estimatedRetroElo": 2500,
+      "ratingRange": {
+        "min": 2460,
+        "max": 2540
+      },
+      "titles": [
+        "四省棋王"
+      ]
+    },
+    {
+      "rank": 43,
+      "name": "崔岩",
+      "pinyin": "Cui Yan",
+      "englishName": "Cui Yan",
+      "aliases": [],
+      "traditionalName": "崔岩",
+      "historicalTitle": "国家大师 / 象甲主力",
+      "historicalTier": "Tier 2: National Master (一流大师)",
+      "estimatedRetroElo": 2500,
+      "ratingRange": {
+        "min": 2470,
+        "max": 2530
+      },
+      "titles": [
+        "国家大师"
+      ]
+    },
+    {
+      "rank": 44,
+      "name": "庄宏明",
+      "pinyin": "Zhuang Hongming",
+      "englishName": "Zhuang Hongming",
+      "aliases": [],
+      "traditionalName": "莊宏明",
+      "historicalTitle": "特级大师",
+      "historicalTier": "Tier 2: Elite Grandmaster (特级大师)",
+      "estimatedRetroElo": 2500,
+      "ratingRange": {
+        "min": 2470,
+        "max": 2530
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 45,
+      "name": "金波",
+      "pinyin": "Jin Bo",
+      "englishName": "Jin Bo",
+      "aliases": [],
+      "traditionalName": "金波",
+      "historicalTitle": "特级大师",
+      "historicalTier": "Tier 2: Elite Grandmaster (特级大师)",
+      "estimatedRetroElo": 2500,
+      "ratingRange": {
+        "min": 2470,
+        "max": 2530
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 46,
+      "name": "郑一泓",
+      "pinyin": "Zheng Yihong",
+      "englishName": "Zheng Yihong",
+      "aliases": [],
+      "traditionalName": "鄭一泓",
+      "historicalTitle": "特级大师",
+      "historicalTier": "Tier 2: Elite Grandmaster (特级大师)",
+      "estimatedRetroElo": 2500,
+      "ratingRange": {
+        "min": 2470,
+        "max": 2530
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 47,
+      "name": "尚威",
+      "pinyin": "Shang Wei",
+      "englishName": "Shang Wei",
+      "aliases": [],
+      "traditionalName": "尚威",
+      "historicalTitle": "特级大师",
+      "historicalTier": "Tier 2: Elite Grandmaster (特级大师)",
+      "estimatedRetroElo": 2500,
+      "ratingRange": {
+        "min": 2470,
+        "max": 2530
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 48,
+      "name": "陈寒峰",
+      "pinyin": "Chen Hanfeng",
+      "englishName": "Chen Hanfeng",
+      "aliases": [],
+      "traditionalName": "陳寒峰",
+      "historicalTitle": "特级大师",
+      "historicalTier": "Tier 2: Elite Grandmaster (特级大师)",
+      "estimatedRetroElo": 2500,
+      "ratingRange": {
+        "min": 2470,
+        "max": 2530
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 49,
+      "name": "宗永生",
+      "pinyin": "Zong Yongsheng",
+      "englishName": "Zong Yongsheng",
+      "aliases": [],
+      "traditionalName": "宗永生",
+      "historicalTitle": "特级大师",
+      "historicalTier": "Tier 2: Elite Grandmaster (特级大师)",
+      "estimatedRetroElo": 2500,
+      "ratingRange": {
+        "min": 2470,
+        "max": 2530
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 50,
+      "name": "李艾东",
+      "pinyin": "Li Aidong",
+      "englishName": "Li Aidong",
+      "aliases": [],
+      "traditionalName": "李艾東",
+      "historicalTitle": "国家大师 / 四川队名将",
+      "historicalTier": "Tier 2: Elite Grandmaster (一流名将/大师)",
+      "estimatedRetroElo": 2500,
+      "ratingRange": {
+        "min": 2470,
+        "max": 2530
+      },
+      "titles": [
+        "国家大师"
+      ]
+    },
+    {
+      "rank": 51,
+      "name": "熊学元",
+      "pinyin": "Xiong Xueyuan",
+      "englishName": "Xiong Xueyuan",
+      "aliases": [],
+      "traditionalName": "熊學元",
+      "historicalTitle": "特级大师",
+      "historicalTier": "Tier 2: Elite Grandmaster (特级大师)",
+      "estimatedRetroElo": 2500,
+      "ratingRange": {
+        "min": 2470,
+        "max": 2530
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 52,
+      "name": "聂铁文",
+      "pinyin": "Nie Tiewen",
+      "englishName": "Nie Tiewen",
+      "aliases": [],
+      "traditionalName": "聶鐵文",
+      "historicalTitle": "特级大师",
+      "historicalTier": "Tier 2: Elite Grandmaster (特级大师)",
+      "estimatedRetroElo": 2500,
+      "ratingRange": {
+        "min": 2470,
+        "max": 2530
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 53,
+      "name": "许文学",
+      "pinyin": "Xu Wenxue",
+      "englishName": "Xu Wenxue",
+      "aliases": [],
+      "traditionalName": "許文學",
+      "historicalTitle": "特级大师",
+      "historicalTier": "Tier 2: Elite Grandmaster (特级大师)",
+      "estimatedRetroElo": 2500,
+      "ratingRange": {
+        "min": 2470,
+        "max": 2530
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 54,
+      "name": "孙浩宇",
+      "pinyin": "Sun Haoyu",
+      "englishName": "Sun Haoyu",
+      "aliases": [
+        "棋坛段子手"
+      ],
+      "traditionalName": "孫浩宇",
+      "historicalTitle": "特级大师",
+      "historicalTier": "Tier 2: Elite Grandmaster (特级大师)",
+      "estimatedRetroElo": 2500,
+      "ratingRange": {
+        "min": 2470,
+        "max": 2530
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 55,
+      "name": "黄海林",
+      "pinyin": "Huang Hailin",
+      "englishName": "Huang Hailin",
+      "aliases": [],
+      "traditionalName": "黃海林",
+      "historicalTitle": "国家大师 / 少年冠军",
+      "historicalTier": "Tier 2: Elite Grandmaster (国家大师)",
+      "estimatedRetroElo": 2500,
+      "ratingRange": {
+        "min": 2470,
+        "max": 2530
+      },
+      "titles": [
+        "国家大师"
+      ]
+    },
+    {
+      "rank": 56,
+      "name": "黎德志",
+      "pinyin": "Li Dezhi",
+      "englishName": "Li Dezhi",
+      "aliases": [
+        "草根棋王"
+      ],
+      "traditionalName": "黎德志",
+      "historicalTitle": "国家大师",
+      "historicalTier": "Tier 2: Elite Grandmaster (国家大师)",
+      "estimatedRetroElo": 2500,
+      "ratingRange": {
+        "min": 2470,
+        "max": 2530
+      },
+      "titles": [
+        "国家大师"
+      ]
+    },
+    {
+      "rank": 57,
+      "name": "潘振波",
+      "pinyin": "Pan Zhenbo",
+      "englishName": "Pan Zhenbo",
+      "aliases": [],
+      "traditionalName": "潘振波",
+      "historicalTitle": "特级大师",
+      "historicalTier": "Tier 2: Elite Grandmaster (特级大师)",
+      "estimatedRetroElo": 2500,
+      "ratingRange": {
+        "min": 2470,
+        "max": 2530
+      },
+      "titles": [
+        "特级大师"
+      ]
+    },
+    {
+      "rank": 58,
+      "name": "李锦欢",
+      "pinyin": "Li Jinhuan",
+      "englishName": "Li Jinhuan",
+      "aliases": [
+        "澳门棋王"
+      ],
+      "traditionalName": "李錦歡",
+      "historicalTitle": "澳门棋王 / 世界亚军",
+      "historicalTier": "Tier 2: Regional Chess King (国际特大/澳门棋王)",
+      "estimatedRetroElo": 2500,
+      "ratingRange": {
+        "min": 2460,
+        "max": 2520
+      },
+      "titles": [
+        "国际特级大师"
+      ]
+    },
+    {
+      "rank": 59,
+      "name": "阮成保",
+      "pinyin": "Nguyen Thanh Bao",
+      "englishName": "Nguyen Thanh Bao",
+      "aliases": [
+        "越南棋王"
+      ],
+      "traditionalName": "阮成保",
+      "historicalTitle": "越南全国冠军 / 世界亚军",
+      "historicalTier": "Tier 2: International Grandmaster (国际特大/越南名将)",
+      "estimatedRetroElo": 2500,
+      "ratingRange": {
+        "min": 2460,
+        "max": 2520
+      },
+      "titles": [
+        "国际特级大师"
+      ]
+    },
+    {
+      "rank": 60,
+      "name": "赖理兄",
+      "pinyin": "Lai Ly Huynh",
+      "englishName": "Lai Ly Huynh",
+      "aliases": [
+        "越南特大"
+      ],
+      "traditionalName": "賴理兄",
+      "historicalTitle": "世界快棋冠军 / 象甲外援冠军",
+      "historicalTier": "Tier 2: International Grandmaster (国际特大/越南第一人)",
+      "estimatedRetroElo": 2500,
+      "ratingRange": {
+        "min": 2470,
+        "max": 2530
+      },
+      "titles": [
+        "国际特级大师"
+      ]
+    },
+    {
+      "rank": 61,
+      "name": "钟珍",
+      "pinyin": "Zhong Zhen",
+      "englishName": "Zhong Zhen",
+      "aliases": [
+        "棋仙",
+        "七星王",
+        "盲棋圣手"
+      ],
+      "traditionalName": "鍾珍",
+      "historicalTitle": "一代宗师 / 棋仙",
+      "historicalTier": "Tier 1: Supreme Chess Master / Immortal (一代宗师/棋仙)",
+      "estimatedRetroElo": 2460,
+      "ratingRange": {
+        "min": 2420,
+        "max": 2500
+      },
+      "titles": [
+        "一代宗师",
+        "棋仙"
+      ]
+    },
+    {
+      "rank": 62,
+      "name": "王琳娜",
+      "pinyin": "Wang Linna",
+      "englishName": "Wang Linna",
+      "aliases": [],
+      "traditionalName": "王琳娜",
+      "historicalTitle": "全国女子冠军 / 特级大师",
+      "historicalTier": "Tier 3: Elite Women Grandmaster (女子特大)",
+      "estimatedRetroElo": 2490,
+      "ratingRange": {
+        "min": 2450,
+        "max": 2500
+      },
+      "titles": [
+        "特级大师",
+        "全国女子冠军"
+      ]
+    },
+    {
+      "rank": 63,
+      "name": "张国凤",
+      "pinyin": "Zhang Guofeng",
+      "englishName": "Zhang Guofeng",
+      "aliases": [],
+      "traditionalName": "張國鳳",
+      "historicalTitle": "全国女子冠军 / 特级大师",
+      "historicalTier": "Tier 3: Elite Women Grandmaster (女子特大)",
+      "estimatedRetroElo": 2490,
+      "ratingRange": {
+        "min": 2450,
+        "max": 2500
+      },
+      "titles": [
+        "特级大师",
+        "全国女子冠军"
+      ]
+    },
+    {
+      "rank": 64,
+      "name": "胡明",
+      "pinyin": "Hu Ming",
+      "englishName": "Hu Ming",
+      "aliases": [
+        "六连冠"
+      ],
+      "traditionalName": "胡明",
+      "historicalTitle": "全国女子六冠王 / 特级大师",
+      "historicalTier": "Tier 3: Elite Women Grandmaster (女子特大/六冠王)",
+      "estimatedRetroElo": 2490,
+      "ratingRange": {
+        "min": 2450,
+        "max": 2500
+      },
+      "titles": [
+        "特级大师",
+        "全国女子冠军"
+      ]
+    },
+    {
+      "rank": 65,
+      "name": "彭鲲",
+      "pinyin": "Peng Kun",
+      "englishName": "Peng Kun",
+      "aliases": [],
+      "traditionalName": "彭鯤",
+      "historicalTitle": "广东名手",
+      "historicalTier": "Tier 4: Elite Regional Master (民国名手)",
+      "estimatedRetroElo": 2340,
+      "ratingRange": {
+        "min": 2300,
+        "max": 2380
+      },
+      "titles": [
+        "民国名手"
+      ]
+    },
+    {
+      "rank": 66,
+      "name": "李贵",
+      "pinyin": "Li Gui",
+      "englishName": "Li Gui",
+      "aliases": [],
+      "traditionalName": "李貴",
+      "historicalTitle": "四会名手",
+      "historicalTier": "Tier 4: Elite Regional Master (民国名手)",
+      "estimatedRetroElo": 2300,
+      "ratingRange": {
+        "min": 2260,
+        "max": 2350
+      },
+      "titles": [
+        "民国名手"
+      ]
+    }
+  ]
+}
