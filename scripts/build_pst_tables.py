@@ -13,9 +13,10 @@ import os
 import sys
 import glob
 import time
+import json
 import argparse
 import multiprocessing as mp
-from typing import List, Dict, Any, Tuple
+from typing import List, Dict, Any, Tuple, Optional, Set
 
 # Add scripts directory to path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -24,6 +25,67 @@ from xiangqi_board import XiangqiBoard
 from frequency_tracker import FrequencyTracker, PHASES, PIECE_TYPES
 from pst_generator import PSTGenerator
 import exporters
+
+def load_invalid_game_paths(audit_file: str, dataset_dir: Optional[str] = None) -> Set[str]:
+    """Loads paths of games flagged with transcription/illegal move errors in the audit JSON report."""
+    if not audit_file or not os.path.exists(audit_file):
+        return set()
+
+    with open(audit_file, "r", encoding="utf-8") as f:
+        audit_data = json.load(f)
+
+    invalid_paths: Set[str] = set()
+    errors = []
+    audit_dataset_dir = ""
+
+    if isinstance(audit_data, dict):
+        errors = audit_data.get("errors", [])
+        audit_dataset_dir = audit_data.get("datasetDir", "")
+    elif isinstance(audit_data, list):
+        errors = audit_data
+
+    for err in errors:
+        raw_file = err.get("file", "") if isinstance(err, dict) else (err if isinstance(err, str) else "")
+        if not raw_file:
+            continue
+        invalid_paths.add(raw_file)
+        invalid_paths.add(os.path.normpath(raw_file))
+        invalid_paths.add(os.path.abspath(raw_file))
+        invalid_paths.add(os.path.realpath(raw_file))
+        if audit_dataset_dir:
+            try:
+                invalid_paths.add(os.path.relpath(raw_file, audit_dataset_dir))
+            except ValueError:
+                pass
+        if dataset_dir:
+            try:
+                invalid_paths.add(os.path.relpath(raw_file, dataset_dir))
+            except ValueError:
+                pass
+
+    return invalid_paths
+
+
+def is_file_invalid(filepath: str, invalid_paths: Set[str], dataset_dir: Optional[str] = None) -> bool:
+    """Checks if a game file path matches any invalid game recorded in the audit."""
+    if not invalid_paths:
+        return False
+    if filepath in invalid_paths:
+        return True
+    if os.path.normpath(filepath) in invalid_paths:
+        return True
+    if os.path.abspath(filepath) in invalid_paths:
+        return True
+    if os.path.realpath(filepath) in invalid_paths:
+        return True
+    if dataset_dir:
+        try:
+            if os.path.relpath(filepath, dataset_dir) in invalid_paths:
+                return True
+        except ValueError:
+            pass
+    return False
+
 
 def parse_game_file(filepath: str, tracker: FrequencyTracker) -> bool:
     """Parses a single PGN game file and records frequencies."""
@@ -96,6 +158,8 @@ def parse_game_file(filepath: str, tracker: FrequencyTracker) -> bool:
                 if tracker.mode in ["activated_occupancy", "all_occupancy", "blended"]:
                     w_factor = 0.3 if tracker.mode == "blended" else 1.0
                     tracker.record_occupancy(list(board.pieces.values()), full_move, red_weight * w_factor, black_weight * w_factor)
+            else:
+                return False
 
         # Handle Black move
         if len(parts) >= 2 and parts[1] not in ["1-0", "0-1", "1/2-1/2", "*"]:
@@ -113,6 +177,8 @@ def parse_game_file(filepath: str, tracker: FrequencyTracker) -> bool:
                 if tracker.mode in ["activated_occupancy", "all_occupancy", "blended"]:
                     w_factor = 0.3 if tracker.mode == "blended" else 1.0
                     tracker.record_occupancy(list(board.pieces.values()), full_move, red_weight * w_factor, black_weight * w_factor)
+            else:
+                return False
 
         full_move += 1
 
@@ -143,14 +209,21 @@ def main():
     parser.add_argument("--workers", type=int, default=max(1, os.cpu_count() or 4), help="Number of parallel worker processes.")
     parser.add_argument("--limit", type=int, default=None, help="Process only first N games (for debugging).")
     parser.add_argument("--format", type=str, default="all", choices=["all", "cpp", "json", "csv", "markdown"], help="Output format.")
+    parser.add_argument("--audit-file", type=str, default="output/dataset_transcription_audit.json",
+                        help="Path to dataset transcription audit JSON report to exclude invalid games (default: output/dataset_transcription_audit.json).")
+    parser.add_argument("--no-exclude-invalid", action="store_true",
+                        help="Disable excluding invalid games identified in the audit file.")
 
     args = parser.parse_args()
+
+    audit_status = "Disabled (--no-exclude-invalid)" if args.no_exclude_invalid else (args.audit_file or "None")
 
     print("=" * 70)
     print(" 🌟 Xiangqi Historical PGN Frequency Tracker & PST Table Generator 🌟")
     print("=" * 70)
     print(f"Dataset Directory : {args.dataset_dir}")
     print(f"Output Directory  : {args.output_dir}")
+    print(f"Audit Exclusions  : {audit_status}")
     print(f"Tracking Mode     : {args.mode}")
     print(f"PST Method        : {args.method} (amplitude_scale={args.amplitude_scale})")
     print(f"Weight Outcomes   : {args.weight_outcomes}")
@@ -167,11 +240,28 @@ def main():
         print(f"❌ Error: No .pgn files found in '{args.dataset_dir}'.")
         sys.exit(1)
 
+    total_discovered = len(all_files)
+    print(f"✅ Discovered {total_discovered:,} total PGN files.")
+
+    # Filter out invalid games identified in audit report
+    excluded_count = 0
+    audit_applied = False
+    if args.audit_file and not args.no_exclude_invalid:
+        if os.path.exists(args.audit_file):
+            print(f"📋 Loading invalid games audit from '{args.audit_file}'...")
+            invalid_paths = load_invalid_game_paths(args.audit_file, args.dataset_dir)
+            valid_files = [f for f in all_files if not is_file_invalid(f, invalid_paths, args.dataset_dir)]
+            excluded_count = total_discovered - len(valid_files)
+            print(f"🚫 Excluded {excluded_count:,} invalid games based on audit report.")
+            print(f"✅ Retained {len(valid_files):,} valid games for PST compilation.")
+            all_files = valid_files
+            audit_applied = True
+        else:
+            print(f"ℹ️ Audit file '{args.audit_file}' not found. No invalid games excluded.")
+
     if args.limit:
         all_files = all_files[:args.limit]
-
-    total_files = len(all_files)
-    print(f"✅ Found {total_files:,} PGN games.")
+        print(f"⏱️ Limit active: processing first {len(all_files):,} games.")
 
     # Split files into chunks for workers
     chunk_size = max(1, len(all_files) // args.workers)
@@ -231,6 +321,8 @@ def main():
                 "amplitude_scale": args.amplitude_scale,
                 "weight_outcomes": args.weight_outcomes,
                 "symmetrize": args.symmetrize,
+                "audit_file": args.audit_file if audit_applied else None,
+                "excluded_invalid_games": excluded_count,
                 "generated_at": time.strftime("%Y-%m-%d %H:%M:%S")
             },
             "frequencies": global_tracker.to_dict()["tables"],

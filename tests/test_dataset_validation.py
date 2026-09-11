@@ -11,6 +11,7 @@ import json
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 from xiangqi_board import XiangqiBoard
 from audit_dataset_transcriptions import validate_pgn_content
+from build_pst_tables import load_invalid_game_paths, is_file_invalid
 
 DATASET_DIR = os.path.join(os.path.dirname(__file__), "..", "Dataset")
 
@@ -86,6 +87,53 @@ class TestDatasetValidation(unittest.TestCase):
 
         self.assertIsInstance(data, list)
         self.assertGreater(len(data), 0)
+
+    def test_audit_exclusion_logic(self):
+        """
+        Validates that load_invalid_game_paths and is_file_invalid properly identify
+        and filter out files from a transcription audit report.
+        """
+        mock_audit_path = os.path.join(DATASET_DIR, "_mock_audit.json")
+        try:
+            mock_data = {
+                "datasetDir": DATASET_DIR,
+                "errors": [
+                    {"file": os.path.join(DATASET_DIR, "中局/00000602.pgn")},
+                    {"file": os.path.join(DATASET_DIR, "中局/00000603.pgn")}
+                ]
+            }
+            with open(mock_audit_path, "w", encoding="utf-8") as f:
+                json.dump(mock_data, f)
+
+            invalid_paths = load_invalid_game_paths(mock_audit_path, DATASET_DIR)
+            self.assertGreater(len(invalid_paths), 0)
+
+            # Direct absolute path check
+            self.assertTrue(is_file_invalid(os.path.join(DATASET_DIR, "中局/00000602.pgn"), invalid_paths, DATASET_DIR))
+            # Relative path check
+            self.assertTrue(is_file_invalid("中局/00000602.pgn", invalid_paths, DATASET_DIR))
+            # Valid file should not be flagged
+            self.assertFalse(is_file_invalid(os.path.join(DATASET_DIR, "valid_game.pgn"), invalid_paths, DATASET_DIR))
+        finally:
+            if os.path.exists(mock_audit_path):
+                os.remove(mock_audit_path)
+
+    def test_transcription_audit_filtering(self):
+        """
+        Validates that the real output/dataset_transcription_audit.json correctly loads
+        and filters games from Dataset/.
+        """
+        audit_file = os.path.join(os.path.dirname(__file__), "..", "output", "dataset_transcription_audit.json")
+        if not os.path.exists(audit_file):
+            return
+
+        invalid_paths = load_invalid_game_paths(audit_file, DATASET_DIR)
+        self.assertGreater(len(invalid_paths), 6000)
+
+        # Confirm sample known invalid file from audit
+        sample_invalid = os.path.join(DATASET_DIR, "中局", "00000602.pgn")
+        self.assertTrue(is_file_invalid(sample_invalid, invalid_paths, DATASET_DIR))
+
 
 if __name__ == "__main__":
     unittest.main()
