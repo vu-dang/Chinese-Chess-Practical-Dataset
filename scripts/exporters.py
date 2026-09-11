@@ -68,6 +68,44 @@ def export_koi_cpp(pst_dict: Dict[str, List[List[int]]], output_file: str, phase
         f.write("} // namespace koi\n")
 
 
+def export_koi_3phase_cpp(pst_by_phase: Dict[str, Dict[str, List[List[int]]]], output_file: str, mode: str = "destination") -> None:
+    """Exports 3-phase PST tables ([0]=Opening, [1]=Midgame, [2]=Endgame) in C++ syntax matching KoiSearch.cpp."""
+    os.makedirs(os.path.dirname(os.path.abspath(output_file)), exist_ok=True)
+
+    phases = ["opening", "midgame", "endgame"]
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write("/*\n")
+        f.write(" * 3-Phase Piece-Square Tables (PST) derived from 58,000+ Master Games (CCPD Dataset)\n")
+        f.write(" * [0] = Opening, [1] = Midgame, [2] = Endgame\n")
+        f.write(" * Orientation: [r][col] where r=0 is enemy back rank, r=9 is own back rank.\n")
+        f.write(f" * Mode: {mode}\n")
+        f.write(" */\n\n")
+        f.write("namespace koi {\n\n")
+
+        for ptype, var_name in PIECE_NAMES_CPP.items():
+            if not all(ptype in pst_by_phase.get(ph, {}) for ph in phases):
+                continue
+            f.write(f"const int {var_name}[3][10][9] = {{\n")
+            for p_idx, ph in enumerate(phases):
+                f.write(f"    // {ph.capitalize()}\n")
+                f.write("    {\n")
+                table = pst_by_phase[ph][ptype]
+                for r in range(10):
+                    row_vals = ", ".join(f"{table[r][c]:3d}" for c in range(9))
+                    comma = "," if r < 9 else ""
+                    comment = ""
+                    if r == 0: comment = " // Enemy back rank"
+                    elif r == 4: comment = " // Enemy river bank"
+                    elif r == 5: comment = " // Own river bank"
+                    elif r == 9: comment = " // Own back rank"
+                    f.write(f"        {{{row_vals}}}{comma}{comment}\n")
+                phase_comma = "," if p_idx < len(phases) - 1 else ""
+                f.write(f"    }}{phase_comma}\n")
+            f.write("};\n\n")
+
+        f.write("} // namespace koi\n")
+
+
 def export_json(all_pst_data: Dict[str, Any], output_file: str) -> None:
     """Exports full nested PST data and metadata to JSON."""
     os.makedirs(os.path.dirname(os.path.abspath(output_file)), exist_ok=True)

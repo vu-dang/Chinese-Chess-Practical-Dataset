@@ -310,6 +310,10 @@ def main():
             ph_cpp = os.path.join(args.output_dir, f"koi_pst_{ph}.cpp")
             exporters.export_koi_cpp(pst_by_phase[ph], ph_cpp, phase=ph, mode=args.mode)
 
+        cpp_3phase_file = os.path.join(args.output_dir, "koi_pst_3phase.cpp")
+        exporters.export_koi_3phase_cpp(pst_by_phase, cpp_3phase_file, mode=args.mode)
+        print(f"💾 Exported Koi 3-Phase C++   : {cpp_3phase_file}")
+
     if args.format in ["all", "json"]:
         json_file = os.path.join(args.output_dir, "pst_tables.json")
         json_payload = {
